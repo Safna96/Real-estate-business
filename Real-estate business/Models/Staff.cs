@@ -16,10 +16,14 @@ namespace Real_estate_business.Models
         public string Fname { get; set; }
         public string Lname { get; set; }
         public string Position { get; set; }
+
+        [Column(TypeName="Date")]
         public DateTime DOB { get; set; }
-        public int Salary { get; set; }
-        [ForeignKey("Department")]
+        public float Salary { get; set; }
+
+        [ForeignKey("Branch")]
         public string Branch_BranchNoRef { get; set; }
+        public virtual Branch Branch { get; set; }
 
     }
 }

@@ -17,9 +17,20 @@ namespace Real_estate_business.Models
         public string City { get; set; }
         public string Ptype{ get; set; }
         public int Rooms { get; set; }
+
+        [ForeignKey("Owner")]
         public string OwnerNoRef { get; set; }
+        public virtual Owner Owner { get; set; }
+
+        [ForeignKey("Staff")]
         public string StaffNoRef { get; set; }
+        public virtual Staff Staff { get; set; }
+
+
+        [ForeignKey("Branch")]
         public string BranchNoRef { get; set; }
-        public int Rent1 { get; set; }
+        public virtual Branch Branch { get; set; }
+
+        public double Rent1 { get; set; }
     }
 }
