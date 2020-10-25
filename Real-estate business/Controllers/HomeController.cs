@@ -29,6 +29,11 @@ namespace Real_estate_business.Controllers
             return View(AllRents);
         }
 
+        public ActionResult OwnerDetail()
+        {
+            List<Owner> AllOwners = businessContext.Owners.ToList();
+            return View(AllOwners);
+        }
 
     }
 }

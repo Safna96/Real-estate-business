@@ -1,0 +1,43 @@
+﻿@model List<Real_estate_business.Models.Owner>
+@using Real_estate_business.Models
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OwnerDetail</title>
+</head>
+<body>
+    <div> 
+        <h1>Owner Details</h1>
+        <table>
+            <tr>
+                <td>Owner No </td>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Address</td>
+                <td>TelNo</td>
+
+            </tr>
+
+            @foreach (Owner owner in Model)
+            {
+                <tr>
+                    <td>@owner.OwnerfNo</td>
+                    <td>@owner.Fname</td>
+                    <td>@owner.Lname</td>
+                    <td>@owner.Address</td>
+                    <td>@owner.TelNo</td>
+                 
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
