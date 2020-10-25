@@ -175,6 +175,23 @@
     <Content Include="Views\Home\StaffDetail.cshtml" />
     <Content Include="Views\Home\RentDetail.cshtml" />
     <Content Include="Views\Home\OwnerDetail.cshtml" />
+    <Content Include="Views\Branch\Index.cshtml" />
+    <Content Include="Views\Branch\Create.cshtml" />
+    <Content Include="Views\Branch\Edit.cshtml" />
+    <Content Include="Views\Branch\Delete.cshtml" />
+    <Content Include="Views\Branch\Details.cshtml" />
+    <Content Include="Views\Owner\Index.cshtml" />
+    <Content Include="Views\Owner\Create.cshtml" />
+    <Content Include="Views\Owner\Edit.cshtml" />
+    <Content Include="Views\Owner\Delete.cshtml" />
+    <Content Include="Views\Owner\Detail.cshtml" />
+    <Content Include="Views\Staff\Index.cshtml" />
+    <Content Include="Views\Staff\Create.cshtml" />
+    <Content Include="Views\Staff\Edit.cshtml" />
+    <Content Include="Views\Staff\Delete.cshtml" />
+    <Content Include="Views\Staff\Details.cshtml" />
+    <Content Include="Views\Staff\IndexQ.cshtml" />
+    <Content Include="Views\Rent\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -183,11 +200,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Branch\" />
     <Folder Include="Views\Business\" />
-    <Folder Include="Views\Owner\" />
-    <Folder Include="Views\Rent\" />
-    <Folder Include="Views\Staff\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010222231398_first.resx">

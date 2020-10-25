@@ -9,7 +9,7 @@ namespace Real_estate_business.Controllers
 {
     public class OwnerController : Controller
     {
-        // GET: Owner
+
         private BusinessContext businessContext = new BusinessContext();
         // GET: Owner
         public ActionResult Index()
@@ -18,11 +18,6 @@ namespace Real_estate_business.Controllers
             return View(Owners);
         }
 
-        public ActionResult OwnerDetails(string id)
-        {
-            Owner owner = businessContext.Owners.SingleOrDefault(x => x.OwnerfNo == id);
-            return View(owner);
-        }
 
         public ActionResult Create()
         {
@@ -39,11 +34,7 @@ namespace Real_estate_business.Controllers
 
         }
 
-        public ActionResult Detail(string id)
-        {
-            Owner owner = businessContext.Owners.SingleOrDefault(x => x.OwnerfNo == id);
-            return View(owner);
-        }
+       
         public ActionResult Edit(string id)
         {
             Owner owner = businessContext.Owners.SingleOrDefault(x => x.OwnerfNo == id);
@@ -78,6 +69,12 @@ namespace Real_estate_business.Controllers
             businessContext.SaveChanges();
             return RedirectToAction("Index");
 
+        }
+
+        public ActionResult Detail(string id)
+        {
+            Owner owner = businessContext.Owners.SingleOrDefault(x => x.OwnerfNo == id);
+            return View(owner);
         }
     }
 }
