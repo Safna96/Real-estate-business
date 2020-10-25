@@ -83,7 +83,7 @@ namespace Real_estate_business.Controllers
 
         }
 
-        public ActionResult PropertyCity()
+        public ActionResult City()
         {
             List<Rent> rent = businessContext.Rents.ToList();
             return View(rent);

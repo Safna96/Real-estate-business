@@ -157,6 +157,10 @@
     <Compile Include="Migrations\202010251531338_new.Designer.cs">
       <DependentUpon>202010251531338_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010251754335_Final.cs" />
+    <Compile Include="Migrations\202010251754335_Final.Designer.cs">
+      <DependentUpon>202010251754335_Final.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\BusinessContext.cs" />
@@ -192,6 +196,12 @@
     <Content Include="Views\Staff\Details.cshtml" />
     <Content Include="Views\Staff\IndexQ.cshtml" />
     <Content Include="Views\Rent\Index.cshtml" />
+    <Content Include="Views\Rent\Create.cshtml" />
+    <Content Include="Views\Rent\Edit.cshtml" />
+    <Content Include="Views\Rent\Delete.cshtml" />
+    <Content Include="Views\Rent\City.cshtml" />
+    <Content Include="Views\Rent\Counts.cshtml" />
+    <Content Include="Views\Rent\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -211,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010251531338_new.resx">
       <DependentUpon>202010251531338_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010251754335_Final.resx">
+      <DependentUpon>202010251754335_Final.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
