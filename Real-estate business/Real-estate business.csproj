@@ -161,6 +161,10 @@
     <Compile Include="Migrations\202010251754335_Final.Designer.cs">
       <DependentUpon>202010251754335_Final.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010251758036_aaa.cs" />
+    <Compile Include="Migrations\202010251758036_aaa.Designer.cs">
+      <DependentUpon>202010251758036_aaa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\BusinessContext.cs" />
@@ -224,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010251754335_Final.resx">
       <DependentUpon>202010251754335_Final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010251758036_aaa.resx">
+      <DependentUpon>202010251758036_aaa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
